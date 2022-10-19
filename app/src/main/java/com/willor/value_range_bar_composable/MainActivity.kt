@@ -6,11 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.willor.compose_value_range_bar.ValueRangeBar
 import com.willor.compose_value_range_bar.ValueRangeBarSettings
 import com.willor.value_range_bar_composable.ui.theme.ValuerangebarcomposableTheme
@@ -25,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    RangeBarExample()
                 }
             }
         }
@@ -33,7 +31,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun RangeBarExample() {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center
@@ -56,6 +54,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     ValuerangebarcomposableTheme {
-        Greeting("Android")
+        RangeBarExample()
     }
 }
