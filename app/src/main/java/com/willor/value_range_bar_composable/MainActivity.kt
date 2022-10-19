@@ -37,12 +37,12 @@ fun RangeBarExample() {
         verticalArrangement = Arrangement.Center
     ){
         ValueRangeBar(
-            settings = ValueRangeBarSettings.DoubleValueRange(
+            settings = ValueRangeBarSettings.IntValueRange(
                 modifier = Modifier.wrapContentHeight(),
-                highValue = 205.11,
+                highValue = 205,
                 highLabel = "Days High",
-                curValue = 203.55,
-                lowValue = 200.40,
+                curValue = 203,
+                lowValue = 200,
                 lowLabel = "Days Low",
 
             )
